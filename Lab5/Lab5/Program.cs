@@ -4,16 +4,20 @@ class Program
 {
     static void Main()
     {
-        int val;   // do not initial value
-        outMethod(out val);
-        Console.WriteLine(val);
-        Console.ReadLine();
+        int x = 6;
+        int y = 4;
+
+        Console.WriteLine(y *= 2);
+        int z = y = 3;
+
+        Console.WriteLine(z);
+        Console.WriteLine(x |= 1);
+        Console.WriteLine(x += 3);
+        Console.WriteLine(x /= 2);
+
+
     }
 
-    static void outMethod(out int i)
-    {
-        i = 20;
-        i = i + 1;
-    }
+
 }
 
