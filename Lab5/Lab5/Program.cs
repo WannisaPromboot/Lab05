@@ -4,22 +4,29 @@ class Program
 {
     static void Main()
     {
-        try
+        int a = 10;
+        int B = EO(a);
+
+
+        Console.WriteLine("Number {0} is {1}",a,B);
+      
+    }
+
+    static int EO(int i)
+    {
+        
+        
+        if((i%2) == 0)
+            {
+            return 0  ;
+            
+           }
+        else
         {
-            double d = 5e9d;
-            Console.WriteLine(d);
-            int i = checked((int)d);
-            Console.WriteLine(i);
 
-
-        }
-
-        catch (Exception)
-        {
-
+            return 1;
 
         }
 
     }
-}  
-
+}
